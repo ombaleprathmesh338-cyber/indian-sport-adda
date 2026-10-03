@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian Sport Adda</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f4f6f8;color:#17202a}
+header{background:linear-gradient(135deg,#ff7a00,#e91e1e);color:white;padding:18px 6%;position:sticky;top:0;z-index:10}
+.top{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font-size:27px;font-weight:800}.tag{font-size:13px;opacity:.9}
+nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:15px}
+nav a{color:white;text-decoration:none;font-weight:700;font-size:14px}
+.hero{padding:55px 6%;background:#101820;color:white}
+.hero h1{font-size:44px;max-width:700px;margin-bottom:12px}
+.hero p{font-size:18px;color:#d9e1e8;max-width:650px}
+.container{max-width:1150px;margin:auto;padding:30px 18px}
+.section-title{font-size:26px;margin:10px 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:white;border-radius:14px;padding:20px;box-shadow:0 4px 18px #00000012}
+.card .icon{font-size:38px;margin-bottom:12px}.card h3{margin-bottom:8px}.card p{color:#68737d;line-height:1.5}
+.news{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px}
+.news-card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px #00000012}
+.news-img{height:135px;background:linear-gradient(135deg,#ff7a00,#f44336);display:flex;align-items:center;justify-content:center;font-size:52px}
+.news-body{padding:17px}.news-body small{color:#e65100;font-weight:700}.news-body h3{margin:8px 0;line-height:1.3}
+.schedule{background:white;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px #00000012}
+.match{display:flex;justify-content:space-between;align-items:center;padding:17px;border-bottom:1px solid #eee;gap:12px}
+.match:last-child{border-bottom:0}.sport{font-weight:700;color:#e65100}.date{font-size:13px;color:#68737d}
+footer{margin-top:35px;background:#101820;color:white;text-align:center;padding:28px}
+@media(max-width:600px){.hero h1{font-size:32px}.top{align-items:flex-start;flex-direction:column}nav{gap:12px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <div><div class="logo">🇮🇳 Indian Sport Adda</div><div class="tag">Your home for Indian sports</div></div>
+  </div>
+  <nav>
+    <a href="#home">Home</a><a href="#sports">Sports</a><a href="#news">Latest News</a>
+    <a href="#schedule">Schedule</a><a href="#players">Players</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Indian Sports. One Adda. 🇮🇳</h1>
+  <p>Follow Indian cricket, badminton, wrestling, hockey, athletics and more — with news, schedules, results and player updates.</p>
+</section>
+
+<main class="container">
+  <h2 class="section-title" id="sports">Sports</h2>
+  <div class="grid">
+    <div class="card"><div class="icon">🏏</div><h3>Cricket</h3><p>India teams, tournaments, fixtures, results and player updates.</p></div>
+    <div class="card"><div class="icon">🏸</div><h3>Badminton</h3><p>Indian shuttlers, BWF events, draws, results and rankings.</p></div>
+    <div class="card"><div class="icon">🤼</div><h3>Wrestling</h3><p>Indian wrestlers, championships, categories and results.</p></div>
+    <div class="card"><div class="icon">🏑</div><h3>Hockey</h3><p>Indian men's and women's hockey news, squads and fixtures.</p></div>
+    <div class="card"><div class="icon">🏃</div><h3>Athletics</h3><p>Indian athletes, major meets, medals and performances.</p></div>
+    <div class="card"><div class="icon">🥊</div><h3>More Sports</h3><p>Boxing, shooting, wrestling, squash and other Indian sports.</p></div>
+  </div>
+
+  <h2 class="section-title" id="news" style="margin-top:38px">Latest Updates</h2>
+  <div class="news">
+    <article class="news-card"><div class="news-img">🏏</div><div class="news-body"><small>CRICKET</small><h3>India cricket: fixtures, squads and tournament updates</h3><p>Stay updated with upcoming Indian cricket action.</p></div></article>
+    <article class="news-card"><div class="news-img">🏸</div><div class="news-body"><small>BADMINTON</small><h3>Indian shuttlers ready for the next international events</h3><p>Track draws, matches and results in one place.</p></div></article>
+    <article class="news-card"><div class="news-img">🤼</div><div class="news-body"><small>WRESTLING</small><h3>Indian wrestling: squads, categories and results</h3><p>Follow India's wrestlers across major championships.</p></div></article>
+  </div>
+
+  <h2 class="section-title" id="schedule" style="margin-top:38px">Upcoming Schedule</h2>
+  <div class="schedule">
+    <div class="match"><div><div class="sport">🇮🇳 India Cricket</div><div class="date">Upcoming fixture</div></div><strong>Schedule →</strong></div>
+    <div class="match"><div><div class="sport">🏸 Badminton</div><div class="date">Upcoming tournament</div></div><strong>Draw / Results →</strong></div>
+    <div class="match"><div><div class="sport">🏑 Hockey</div><div class="date">Upcoming match</div></div><strong>Match Centre →</strong></div>
+  </div>
+
+  <h2 class="section-title" id="players" style="margin-top:38px">Indian Players</h2>
+  <div class="grid">
+    <div class="card"><div class="icon">⭐</div><h3>Player Profiles</h3><p>Build profiles for India's leading athletes with sport, events and achievements.</p></div>
+    <div class="card"><div class="icon">📊</div><h3>Results & Stats</h3><p>Keep player performances and tournament results organized.</p></div>
+  </div>
+</main>
+
+<footer>
+  <strong>Indian Sport Adda 🇮🇳</strong>
+  <p style="margin-top:8px;color:#b9c2c9">Indian sports news, schedules and results.</p>
+  <p style="margin-top:14px;font-size:12px;color:#8e9aa4">Demo homepage — verify live sports information before publishing.</p>
+</footer>
+</body>
+</html>
